@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-const MyOrders = () => {
+const PlaceOrder = () => {
     const { foodId } = useParams();
     const [food, setFood] = useState({ });
 
@@ -15,11 +15,13 @@ const MyOrders = () => {
     }, [foodId]);
     return (
         <div>
+            <div>
             <h1>This is my orders {foodId}</h1>
             <h1>This is my orders {food.name}</h1>
             <button>Cancel My Order</button>
         </div>
+        </div>
     );
 };
 
-export default MyOrders;
+export default PlaceOrder;

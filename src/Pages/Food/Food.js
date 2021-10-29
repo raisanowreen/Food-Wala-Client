@@ -13,7 +13,7 @@ const Food = (props) => {
                 <p>{details}</p>
               
                 <br />
-               <Link to={`/myOrders/${price}`}> <button>Review My Order</button></Link>
+               <Link to={`/placeOrder/${price}`}> <button>Review My Order</button></Link>
             </div>
         </div>
     );
