@@ -12,6 +12,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import MyOrders from './Pages/MyOrders/MyOrders';
+import AddItem from './Pages/AddItem/AddItem';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
           </PrivateRoute>
           <Route exact path="/login">
 <Login></Login>
+          </Route>
+          <Route exact path="/addItem">
+<AddItem></AddItem>
           </Route>
           <Route exact path="/myOrders">
 <MyOrders></MyOrders>

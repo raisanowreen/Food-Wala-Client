@@ -5,7 +5,7 @@ const FoodOptions = () => {
     const [foods, setFoods] = useState([]);
 
     useEffect(()=>{
-        fetch('./foods.json')
+        fetch('http://localhost:5000/foods')
         .then(res => res.json())
         .then(data => {
             setFoods(data)
@@ -19,7 +19,7 @@ const FoodOptions = () => {
         <div>
                     {
                         foods.map(food => <Food
-                            key={food.price}
+                            key={food._id}
                             food={food}
                         >
                         </Food>)

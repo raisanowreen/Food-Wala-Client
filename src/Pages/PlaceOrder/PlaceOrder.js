@@ -8,12 +8,9 @@ const PlaceOrder = () => {
     const [food, setFood] = useState({ });
 
     useEffect( () =>{
-        fetch('/foods.json')
+        fetch(`http://localhost:5000/foods/${foodId}`)
         .then(res => res.json())
-        .then(data => {
-            const f = data.find(s => s.price == foodId)
-            setFood(f)
-        })
+        .then(data => setFood(data))
     }, [foodId]);
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Food = (props) => {
-    const {name, details, img, price} = props.food
+    const {name, details, img, _id} = props.food
     return (
         <div className="product">
             <div>
@@ -13,7 +13,7 @@ const Food = (props) => {
                 <p>{details}</p>
               
                 <br />
-               <Link to={`/placeOrder/${price}`}> <button>Review My Order</button></Link>
+               <Link to={`/placeOrder/${_id}`}> <button>Review My Order</button></Link>
             </div>
         </div>
     );
