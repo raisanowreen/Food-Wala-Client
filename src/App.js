@@ -6,12 +6,12 @@ import Banner from './Pages/Home/Banner/Banner';
 import FoodOptions from './Pages/Home/FoodOptions/FoodOptions';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
-import MyOrders from './Pages/PlaceOrder/PlaceOrder';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
+import MyOrders from './Pages/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -40,6 +40,9 @@ function App() {
           </PrivateRoute>
           <Route exact path="/login">
 <Login></Login>
+          </Route>
+          <Route exact path="/myOrders">
+<MyOrders></MyOrders>
           </Route>
           <Route path="*">
 <NotFound></NotFound>

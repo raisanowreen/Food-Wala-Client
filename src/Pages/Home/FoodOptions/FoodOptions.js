@@ -4,8 +4,6 @@ import Food from '../../Food/Food';
 const FoodOptions = () => {
     const [foods, setFoods] = useState([]);
 
-    
-
     useEffect(()=>{
         fetch('./foods.json')
         .then(res => res.json())
@@ -14,12 +12,11 @@ const FoodOptions = () => {
         })
     },[]);
 
-   
+
 
     return (
         <div>
-           <div>
-                <div>
+        <div>
                     {
                         foods.map(food => <Food
                             key={food.price}
@@ -28,7 +25,6 @@ const FoodOptions = () => {
                         </Food>)
                     }
                 </div>
-        </div>
         </div>
     );
 };

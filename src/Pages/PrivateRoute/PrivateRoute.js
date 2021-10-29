@@ -3,8 +3,12 @@ import { Route, Redirect } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user, loading } = useAuth();
-    if (loading) return 'loading';
+    const { user, isLoading } = useAuth();
+    if (isLoading) {
+        return <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+    }
     return (
         <Route
             {...rest}
