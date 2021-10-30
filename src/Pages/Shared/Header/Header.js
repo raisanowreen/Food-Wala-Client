@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Header.css';
 
 const Header = () => {
   const {user, logOut} = useAuth();
     return (
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 mx-auto mt-5">
+        <div className=" custom-background">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 mx-auto mt-5 mb-5 rounded">
   <div class="container-fluid">
   <img src="https://i.ibb.co/s2q2LZF/Food3.png" alt="" height="100" class="d-inline-block align-text-top me-5 ms-5"/>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
