@@ -29,9 +29,24 @@ const handleAddToCart =(index)=>{
 
     return (
         <div>
+          <h1 className="mt-5 mb-5 pt-5 text-warning text-center">What Type Food You Want To Deliver?</h1>  
         <div>
                     {
-                        foods.map((food, index)=> <div><h1>{food.name}</h1><h1>{food.price}</h1><Link to={`/placeOrder/${food._id}`}><button onClick={()=>handleAddToCart(index)}>Buy Now</button></Link></div>)
+                        foods.map((food, index)=> <div class="card h-100 mb-3 bg-warning w-50 mx-auto">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src={food.img} class="img-fluid rounded-start" height="300px" alt="..."/>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body mt-5">
+                              <h5 class="card-title">Type: {food.name}</h5>
+                              <p class="card-text">Details: {food.details}</p>
+                              <p class="card-text mb-3">Delivery charge: {food.price}</p>
+                              <Link to={`/placeOrder/${food._id}`}><button class="btn btn-dark px-5" onClick={()=>handleAddToCart(index)}>Select Now</button></Link>
+                            </div>
+                          </div>
+                        </div>
+                      </div>)
                     }
                 </div>
         </div>
