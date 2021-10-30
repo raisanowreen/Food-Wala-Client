@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
     return (
 <div class="card bg-warning text-white image-sizing">
-  <img src="https://i.ibb.co/X51sg2m/Untitled-designg.png" class="card-img" alt="..."/>
+  <img src="https://i.ibb.co/X51sg2m/Untitled-designg.png" height="650" class="card-img" alt="..."/>
   <div class="card-img-overlay">
   <div>
   <h1 className="mt-5 mb-5 pt-5 text-white">Your Food Is FoodWala's Responsibility</h1>

@@ -29,10 +29,10 @@ const handleAddToCart =(index)=>{
 
     return (
         <div>
-          <h1 className="mt-5 mb-5 pt-5 text-warning text-center">What Type Food You Want To Deliver?</h1>  
+          <h1 className="mt-5 mb-5 pt-5 text-warning text-center ms-3 me-3">What Type Food You Want To Deliver?</h1>  
         <div>
                     {
-                        foods.map((food, index)=> <div class="card h-100 mb-3 bg-warning w-50 mx-auto">
+                        foods.map((food, index)=> <div class="card mb-3 bg-warning w-75 mx-auto">
                         <div class="row g-0">
                           <div class="col-md-4">
                             <img src={food.img} class="img-fluid rounded-start" height="300px" alt="..."/>

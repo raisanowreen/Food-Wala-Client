@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <div class="card bg-warning text-white fs-5">
-  <img src="https://i.ibb.co/N2wmHbq/Untitled-designaq.png" height="430px" class="card-img" alt="..."/>
-  <div class="card-img-overlay">
+            <div class="card bg-white text-warning fs-5">
+  {/* <img src="https://i.ibb.co/N2wmHbq/Untitled-designaq.png" height="660px" class="card-img" alt="..."/> */}
+  <div class="card-body-overlay">
   <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap justify-content-around align-items-center mt-5">
   <div>
         <h1 className="mb-4">FoodWala Policies</h1>
@@ -16,7 +16,7 @@ const Footer = () => {
         <h6>Emergency Delivery</h6>
       </div>
       <div className="d-flex justify-content-center">
-     <img src="https://i.ibb.co/n6GtntZ/delivery.png" height="200" alt="" />
+     <img src="https://i.ibb.co/1sxVyCH/deli.png" height="200" alt="" />
      </div>
       <div>
         <div>
