@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
-import Food from './Pages/Food/Food';
+// import Food from './Pages/Food/Food';
 import Banner from './Pages/Home/Banner/Banner';
 import FoodOptions from './Pages/Home/FoodOptions/FoodOptions';
 import Home from './Pages/Home/Home/Home';
@@ -13,6 +13,7 @@ import Header from './Pages/Shared/Header/Header';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import MyOrders from './Pages/MyOrders/MyOrders';
 import AddItem from './Pages/AddItem/AddItem';
+import ManageAllOrders from './Pages/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
@@ -33,9 +34,9 @@ function App() {
           <Route exact path="/foodOptions">
 <FoodOptions></FoodOptions>
           </Route>
-          <Route exact path="/food">
+          {/* <Route exact path="/food">
 <Food></Food>
-          </Route>
+          </Route> */}
           <PrivateRoute exact path="/placeOrder/:foodId">
 <PlaceOrder></PlaceOrder>
           </PrivateRoute>
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route exact path="/myOrders">
 <MyOrders></MyOrders>
+          </Route>
+          <Route exact path="/manageAllOrders">
+<ManageAllOrders></ManageAllOrders>
           </Route>
           <Route path="*">
 <NotFound></NotFound>
