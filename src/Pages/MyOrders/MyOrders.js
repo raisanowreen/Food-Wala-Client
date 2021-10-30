@@ -3,7 +3,11 @@ import useAuth from '../../hooks/useAuth';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
+
     const {user} = useAuth();
+
+    
+
 
 
 useEffect(()=>{
@@ -14,9 +18,15 @@ useEffect(()=>{
     })
 },[]);   
 
+useEffect(() =>{
+    fetch('http://localhost:5000/delete')
+    .then(res=> res.json())
+    .then(data => setOrders(data));
+},[])
+
 
 const handleDelete = id =>{
-    const url= `http://localhost:5000/myOrders/${id}`
+    const url= `http://localhost:5000/delete/${id}`
     fetch(url, {
         method: 'DELETE'
     })
