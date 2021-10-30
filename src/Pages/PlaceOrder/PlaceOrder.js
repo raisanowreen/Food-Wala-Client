@@ -37,15 +37,15 @@ const PlaceOrder = () => {
                         <h1 className="text-white fs-3 mb-5 text-center">Fill up the form to purchase this food type!</h1>
 
             <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap">
-            <div class="card mb-5 bg-warning w-75 mx-auto ms-5">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src={food.img} class="img-fluid rounded-start" height="300px" alt="..."/>
+            <div className="card mb-5 bg-warning w-75 mx-auto ms-5">
+                        <div className="row g-0">
+                          <div className="col-md-4">
+                            <img src={food.img} className="img-fluid rounded-start" height="300px" alt="..."/>
                           </div>
-                          <div class="col-md-8">
-                            <div class="card-body mt-5">
-                              <h5 class="card-title">Type: {food.name}</h5>
-                              <p class="card-text">Details: {food.details}</p>
+                          <div className="col-md-8">
+                            <div className="card-body mt-5">
+                              <h5 className="card-title">Type: {food.name}</h5>
+                              <p className="card-text">Details: {food.details}</p>
                             </div>
                           </div>
                         </div>

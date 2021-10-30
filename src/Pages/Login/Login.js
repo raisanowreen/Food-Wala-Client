@@ -19,9 +19,16 @@ const Login = () => {
         })
     }
     return (
-        <div>
-            <h1>This is login</h1>
-            <button onClick={handleGoogleLogIn}>Google Login</button>
+        <div className="m-5">
+              <h1 className="mt-5 mb-5 pt-5 text-white text-center">Please login first!</h1>
+
+              <div className="input-group mb-3 w-50 mx-auto">
+  <input type="text" className="form-control" placeholder="Login with email or number" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+  <button className="btn btn-warning" type="button" id="button-addon2">Button</button>
+</div>
+            <div className="d-flex justify-content-center">
+            <button onClick={handleGoogleLogIn} type="submit" className="btn btn-warning px-5 mb-5">Login with Google</button>
+</div>
         </div>
     );
 };

@@ -49,7 +49,7 @@ const ManageAllOrders = () => {
                     <td>{allOrder.food}</td>
                     <td>{allOrder.city}</td>
                     <td>{allOrder.status}</td>
-                    <td><button type="button" class="btn btn-warning" onClick={()=> handleDelete(allOrder._id)}>Delete order</button></td>
+                    <td><button type="button" className="btn btn-warning" onClick={()=> handleDelete(allOrder._id)}>Delete order</button></td>
                   </tr>   
                 </tbody>
               </Table>)
