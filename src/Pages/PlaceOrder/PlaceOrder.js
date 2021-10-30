@@ -34,23 +34,36 @@ const PlaceOrder = () => {
         
     return (
         <div>
-            <div>
-            <h1>This is my orders {foodId}</h1>
-            <h1>This is my orders {food.name}</h1>
-        </div>
-        <div>
-        <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
+                        <h1 className="text-white fs-3 mb-5 text-center">Fill up the form to purchase this food type!</h1>
 
-<input defaultValue={user.displayName} {...register("name")} />
+            <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap">
+            <div class="card mb-5 bg-warning w-75 mx-auto ms-5">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src={food.img} class="img-fluid rounded-start" height="300px" alt="..."/>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body mt-5">
+                              <h5 class="card-title">Type: {food.name}</h5>
+                              <p class="card-text">Details: {food.details}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            <div className="ps-3 pt-3">
 
-<input defaultValue={user.email} {...register("email", { required: true })} />
-<input defaultValue={food.name} {...register("food")} />
-<input placeholder="Address" defaultValue="" {...register("address")} />
-<input placeholder="City" defaultValue="" {...register("city")} />
-<input placeholder="phone number" defaultValue="" {...register("phone")} />
-<input defaultValue="Pending" {...register("status")} />
-<input type="submit" value="Place My Order" />
+            <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
+
+<p><input className="p-2 rounded me-3 mb-2" defaultValue={user.displayName} {...register("name")} />
+<input className="p-2 rounded" defaultValue={user.email} {...register("email", { required: true })} /></p>
+<p><input className="px-5 py-2 rounded text-center" defaultValue={food.name} {...register("food", { required: true })} /></p>
+<input className="p-2 rounded me-3 mb-3" placeholder="Address" defaultValue="" {...register("address")} />
+<input className="p-2 rounded mb-2" placeholder="City" defaultValue="" {...register("city")} />
+<input className="p-2 rounded me-3 mb-2" placeholder="phone number" defaultValue="" type="number" {...register("phone")} />
+<input className="p-2 rounded" defaultValue="Pending" {...register("status")} />
+<p><input className="mt-3 p-2 rounded bg-warning" type="submit" value="Purchase Food Option" /></p>
 </form>
+        </div>
         </div>
         </div>
     );

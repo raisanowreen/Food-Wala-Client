@@ -43,10 +43,18 @@ const handleDelete = id =>{
 
     return (
         <div>
-           <h1>{orders.length}</h1>
+              <h1 className="mt-5 text-white text-center mb-3">See Your Orders</h1>
+
+           <h1 className="text-success text-center">Total order:{orders.length}</h1>
             {
                  
-                    orders.map((order, index) => <div><h1>{order.name}</h1><h1>{order.email}</h1><button onClick={()=> handleDelete(order._id)}>Cancel my order</button></div>)
+                    orders.map((order, index) => <div class="card w-75 m-3 mx-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">Food type:{order.name}</h5>
+                      <p class="card-text">Delivery charge: $ {order.price}</p>
+                      <p class="card-text">Order status: {order.status}</p>
+                      <button class="btn btn-warning px-5" type="button" onClick={()=> handleDelete(order._id)}>Cancel my order</button>  </div>
+                  </div>)
                 
             }
         </div>

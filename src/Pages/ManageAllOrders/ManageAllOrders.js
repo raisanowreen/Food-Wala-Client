@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Table } from 'react-bootstrap';
 
 const ManageAllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
@@ -27,9 +28,31 @@ const ManageAllOrders = () => {
     }
     return (
         <div>
-            <h1>This are users' orders.</h1>
+            
+            <h1 className="mt-5 mb-5 pt-5 text-white text-center ms-3 me-3">Check Our Customers' Purchases</h1>
             {
-                allOrders.map(allOrder => <div><h1>{allOrder.name}</h1><h1>{allOrder.email}</h1><h1>{allOrder.food}</h1><button onClick={()=> handleDelete(allOrder._id)}>Delete order</button></div>)
+                allOrders.map(allOrder => <Table className="m-5 w-75 mx-auto bg-white" striped bordered hover>
+                <thead className="text-center text-dark">
+                  <tr>
+                    <th>User Id</th>
+                    <th>User Name</th>
+                    <th>Food Type</th>
+                    <th>City</th>
+                    <th>Order Status</th>
+                    <th>Admin</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="text-center text-white">
+                    <td>{allOrder._id}</td>
+                    <td>{allOrder.name}</td>
+                    <td>{allOrder.food}</td>
+                    <td>{allOrder.city}</td>
+                    <td>{allOrder.status}</td>
+                    <td><button type="button" class="btn btn-warning" onClick={()=> handleDelete(allOrder._id)}>Delete order</button></td>
+                  </tr>   
+                </tbody>
+              </Table>)
             }
         </div>
     );

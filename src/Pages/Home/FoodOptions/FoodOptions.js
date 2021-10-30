@@ -28,7 +28,7 @@ const handleAddToCart =(index)=>{
 }
 
     return (
-        <div>
+        <div className="bg-white">
           <h1 className="mt-5 mb-5 pt-5 text-warning text-center ms-3 me-3">What Type Food You Want To Deliver?</h1>  
         <div>
                     {
