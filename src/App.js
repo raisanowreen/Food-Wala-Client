@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
-// import Food from './Pages/Food/Food';
 import Banner from './Pages/Home/Banner/Banner';
 import FoodOptions from './Pages/Home/FoodOptions/FoodOptions';
 import Home from './Pages/Home/Home/Home';
@@ -34,9 +33,6 @@ function App() {
           <Route exact path="/foodOptions">
 <FoodOptions></FoodOptions>
           </Route>
-          {/* <Route exact path="/food">
-<Food></Food>
-          </Route> */}
           <PrivateRoute exact path="/placeOrder/:foodId">
 <PlaceOrder></PlaceOrder>
           </PrivateRoute>

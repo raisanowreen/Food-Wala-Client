@@ -45,7 +45,7 @@ const handleDelete = id =>{
         <div>
               <h1 className="mt-5 text-white text-center mb-3">See Your Orders</h1>
 
-           <h1 className="text-success text-center">Total order:{orders.length}</h1>
+           <h1 className="text-success text-center">Total Orders:{orders.length}</h1>
             {
                  
                     orders.map((order, index) => <div class="card w-75 m-3 mx-auto">

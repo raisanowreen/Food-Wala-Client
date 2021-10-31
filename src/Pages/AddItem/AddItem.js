@@ -19,15 +19,22 @@ const onSubmit = data => {
 }
     return (
         <div>
-            <h1>Add a new food item</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
+           <div className="d-flex justify-content-center mb-3">
+           <img src="https://i.ibb.co/Ln9Xzgt/mi.png" height="150" alt="" />
+           </div>
+            <div  className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap justify-content-center">
+            <h1 className="text-white text-center mb-3 me-5 ms-5">Add a new food type!</h1>
+           
+           <form onSubmit={handleSubmit(onSubmit)}>
 
-            <input type="text" {...register("name")} placeholder="food name"/>  
-      <textarea {...register("details")} placeholder="food details"/>
-      <input type="number" {...register("price")} placeholder="food price"/>
-            <input type="text" {...register("img")} placeholder="food image url" />
-      <input type="submit" />
+<p> <input className="px-5 py-2 rounded" type="text" {...register("name")} placeholder="food name"/>  </p>
+<textarea className="px-5 rounded" {...register("details")} placeholder="food details"/>
+<p>      <input className="px-5 py-2 rounded" type="number" {...register("price")} placeholder="food price"/></p>   
+<input className="px-5 py-2 rounded" type="text" {...register("img")} placeholder="food image url" />    
+<p>      <input className="px-5 py-2 rounded mb-5 mt-2 bg-warning" type="submit" /></p>
 </form>
+          
+        </div>
         </div>
     );
 };

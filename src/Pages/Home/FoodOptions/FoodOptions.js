@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import Map from '../Map/Map';
-// import Food from '../../Food/Food';
 import './FoodOptions.css';
 
 
@@ -42,18 +40,17 @@ const handleAddToCart =(index)=>{
                             <img src={food.img} className="img-fluid rounded-start" height="300px" alt="..."/>
                           </div>
                           <div className="col-md-8">
-                            <div className="card-body mt-5">
-                              <h5 className="card-title">Type: {food.name}</h5>
+                            <div className="card-body mt-5 pt-3">
+                              <h5 className="card-title mt-5">Type: {food.name}</h5>
                               <p className="card-text">Details: {food.details}</p>
-                              <p className="card-text mb-3">Delivery charge: {food.price}</p>
-                              <Link to={`/placeOrder/${food._id}`}><button className="btn btn-dark px-5" onClick={()=>handleAddToCart(index)}>Select Now</button></Link>
+                              <p className="card-text mb-3 mt-5">Delivery charge: {food.price}</p>
+                              <Link to={`/placeOrder/${food._id}`}><button className="btn btn-dark px-5 mt-5" onClick={()=>handleAddToCart(index)}>Select Now</button></Link>
                             </div>
                           </div>
                         </div>
                       </div>)
                     }
                 </div>
-                {/* <Map></Map> */}
         </div>
     );
 };

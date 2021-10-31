@@ -19,17 +19,22 @@ const Login = () => {
         })
     }
     return (
+       <div>
+            <div className="d-flex justify-content-center mb-3">
+           <img src="https://i.ibb.co/Ln9Xzgt/mi.png" height="150" alt="" />
+           </div>
         <div className="m-5">
-              <h1 className="mt-5 mb-5 pt-5 text-white text-center">Please login first!</h1>
+              <h1 className="mb-5 text-white text-center">Please login first!</h1>
 
-              <div className="input-group mb-3 w-50 mx-auto">
-  <input type="text" className="form-control" placeholder="Login with email or number" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-  <button className="btn btn-warning" type="button" id="button-addon2">Button</button>
+              <div className="input-group mb-3 mx-auto">
+  <input type="text" className="form-control" placeholder="Your Food Company Name" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+  <button className="btn btn-warning" type="button" id="button-addon2">Send</button>
 </div>
             <div className="d-flex justify-content-center">
-            <button onClick={handleGoogleLogIn} type="submit" className="btn btn-warning px-5 mb-5">Login with Google</button>
+            <button onClick={handleGoogleLogIn} type="submit" className="btn btn-warning px-5 fs-3 mb-5"><i class="fab fa-google me-2 fs-3 p-3"></i>Login with Google</button>
 </div>
         </div>
+       </div>
     );
 };
 export default Login;

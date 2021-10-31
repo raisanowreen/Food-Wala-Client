@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
             
             <h1 className="mt-5 mb-5 pt-5 text-white text-center ms-3 me-3">Check Our Customers' Purchases</h1>
             {
-                allOrders.map(allOrder => <Table className="m-5 w-75 mx-auto bg-white" striped bordered hover>
+                allOrders.map(allOrder => <Table responsive="sm" className="bg-white w-50 mx-auto" striped bordered hover>
                 <thead className="text-center text-dark">
                   <tr>
                     <th>User Id</th>

@@ -17,7 +17,7 @@ Bootstrap css framework has been used in this project for styling UI. Also react
 
 + Installation
 
-React route, firebase, Mongodb, Express, Dotenv, Cors has been installed to make the site like Single Page Application, implement login methods, connect to database, have uninterapted functionalities.
+React route, firebase, Mongodb, Express, Dotenv, Cors, Node has been installed to make the site like Single Page Application, implement login methods, connect to database, have uninterapted functionalities.
 
 + Private Route & Security
 

@@ -36,7 +36,7 @@ const PlaceOrder = () => {
         <div>
                         <h1 className="text-white fs-3 mb-5 text-center">Fill up the form to purchase this food type!</h1>
 
-            <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap">
+            <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap justify-content-around">
             <div className="card mb-5 bg-warning w-75 mx-auto ms-5">
                         <div className="row g-0">
                           <div className="col-md-4">
@@ -50,13 +50,13 @@ const PlaceOrder = () => {
                           </div>
                         </div>
                       </div>
-            <div className="ps-3 pt-3">
+            <div className="ps-5 pt-3 ms-5">
 
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
 <p><input className="p-2 rounded me-3 mb-2" defaultValue={user.displayName} {...register("name")} />
 <input className="p-2 rounded" defaultValue={user.email} {...register("email", { required: true })} /></p>
-<p><input className="px-5 py-2 rounded text-center" defaultValue={food.name} {...register("food", { required: true })} /></p>
+<p><input className="px-2 py-2 rounded text-center" defaultValue={food.name} {...register("food", { required: true })} /></p>
 <input className="p-2 rounded me-3 mb-3" placeholder="Address" defaultValue="" {...register("address")} />
 <input className="p-2 rounded mb-2" placeholder="City" defaultValue="" {...register("city")} />
 <input className="p-2 rounded me-3 mb-2" placeholder="phone number" defaultValue="" type="number" {...register("phone")} />
