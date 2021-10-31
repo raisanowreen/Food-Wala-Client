@@ -26,12 +26,13 @@ const ManageAllOrders = () => {
             }
         })
     }
+    
     return (
         <div>
             
             <h1 className="mt-5 mb-5 pt-5 text-white text-center ms-3 me-3">Check Our Customers' Purchases</h1>
             {
-                allOrders.map(allOrder => <Table responsive="sm" className="bg-white w-50 mx-auto" striped bordered hover>
+                allOrders.map(allOrder => <Table responsive="sm" className="bg-white w-75 mx-auto" striped bordered hover>
                 <thead className="text-center text-dark">
                   <tr>
                     <th>User Id</th>
@@ -48,7 +49,7 @@ const ManageAllOrders = () => {
                     <td>{allOrder.name}</td>
                     <td>{allOrder.food}</td>
                     <td>{allOrder.city}</td>
-                    <td>{allOrder.status}</td>
+                    <td><button onclick="change()" type="button" className="btn btn-dark">{allOrder.status}</button></td>
                     <td><button type="button" className="btn btn-warning" onClick={()=> handleDelete(allOrder._id)}>Delete order</button></td>
                   </tr>   
                 </tbody>

@@ -18,9 +18,6 @@ const Header = () => {
         <li className="nav-item">
           <Link className="nav-link active me-2" aria-current="page" to="/home">Home</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link active me-2" aria-current="page" to="/contact">Contact</Link>
-        </li>
        { user.email &&
          <ul className="navbar-nav"> <li className="nav-item">
           <Link className="nav-link active me-2" aria-current="page" to="/myOrders">My Orders</Link>
