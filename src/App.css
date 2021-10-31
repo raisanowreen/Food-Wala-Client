@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#map { position: absolute; top: 60px; bottom: 0; right: 0; left: 0; width: 100%; }
+#map { position: absolute; top: 60px; bottom: 5px; right: 0; left: 0; width: 100%; }
 
 
 .App-logo {

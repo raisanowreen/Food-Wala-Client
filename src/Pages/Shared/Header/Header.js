@@ -12,6 +12,7 @@ const Header = () => {
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
+    {/* Menus Start */}
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
         <li className="nav-item">
@@ -32,6 +33,7 @@ const Header = () => {
         </li></ul>
         }
       </ul>
+      {/* Login,Logout, conditional user name start */}
       <li className="d-flex nav-item fs-4">
       {user.email && <span style={{ color: 'orange' }}>Hello {user.displayName}! </span>}
                 {

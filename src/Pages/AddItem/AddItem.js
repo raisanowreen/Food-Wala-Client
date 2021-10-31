@@ -8,6 +8,7 @@ const AddItem = () => {
 const onSubmit = data => {
     console.log(data);
 
+// Add items api to database
 
     axios.post('http://localhost:5000/foods', data)
     .then(res =>{

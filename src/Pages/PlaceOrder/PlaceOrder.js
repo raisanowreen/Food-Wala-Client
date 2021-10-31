@@ -8,7 +8,7 @@ const PlaceOrder = () => {
     const { foodId } = useParams();
     const [food, setFood] = useState({ });
 
-
+// Single item url fetch
     useEffect( () =>{
         fetch(`https://peaceful-retreat-36189.herokuapp.com/foods/${foodId}`)
         .then(res => res.json())
@@ -16,7 +16,7 @@ const PlaceOrder = () => {
     }, [foodId]);
 
 
-
+// Order placment update
     const { register, handleSubmit, reset } = useForm();
     const { user } = useAuth();
     const onSubmit = data => {
@@ -34,6 +34,7 @@ const PlaceOrder = () => {
         
     return (
         <div>
+          {/* single food showcasing */}
                         <h1 className="text-white fs-3 mb-5 text-center">Fill up the form to purchase this food type!</h1>
 
             <div className="d-flex flex-sm-wrap flex-md-nowrap flex-wrap justify-content-around">
@@ -51,7 +52,7 @@ const PlaceOrder = () => {
                         </div>
                       </div>
             <div className="ps-5 pt-3 ms-5">
-
+{/* Placeorder form */}
             <form className="shipping-form" onSubmit={handleSubmit(onSubmit)}>
 
 <p><input className="p-2 rounded me-3 mb-2" defaultValue={user.displayName} {...register("name")} />

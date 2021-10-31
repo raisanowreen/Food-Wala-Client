@@ -10,7 +10,7 @@ const useFirebase = () => {
 
     const auth = getAuth();
 
-
+// Google Signin Method Implementation
     const signInUsingGoogle = () =>{
         setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();

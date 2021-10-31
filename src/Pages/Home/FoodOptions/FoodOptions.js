@@ -30,11 +30,12 @@ const handleAddToCart =(index)=>{
 }
 
     return (
+      // Food options from database api
         <div className="bg-white pb-5 custom-position">
           <h1 className="mt-5 mb-5 pt-5 text-warning text-center ms-3 me-3">What Type Food You Want To Deliver?</h1>  
         <div>
                     {
-                        foods.map((food, index)=> <div className="card mb-3 bg-warning w-75 mx-auto">
+                        foods.map((food, index)=> <div className="card mb-2 bg-warning w-75 mx-auto">
                         <div className="row g-0">
                           <div className="col-md-4">
                             <img src={food.img} className="img-fluid rounded-start" height="300px" alt="..."/>

@@ -13,10 +13,6 @@ const FoodWalaApp = () => {
                 <button type="button" className="btn btn-warning py-3 mb-2"><i class="fab fa-google-play me-2"></i>Get in on Google Play</button><br />
                 <button type="button" className="btn btn-warning py-3"><i class="fas fa-shopping-bag me-2"></i>Explore App Gallery</button>
             </div>
-
-
-
-
             <div>
                 <img src="https://i.ibb.co/yS5VsWM/dfvgfgv.png" height="490" alt="" />
             </div>
