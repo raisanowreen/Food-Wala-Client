@@ -57,7 +57,7 @@ const PlaceOrder = () => {
 
 <p><input className="p-2 rounded me-3 mb-2" defaultValue={user.displayName} {...register("name")} />
 <input className="p-2 rounded" defaultValue={user.email} {...register("email", { required: true })} /></p>
-<p><input className="px-2 py-2 rounded text-center" defaultValue="" {...register("food", { required: true })} /></p>
+<p><input className="px-2 py-2 rounded text-center" defaultValue="" placeholder="food type" {...register("food", { required: true })} /></p>
 <input className="p-2 rounded me-3 mb-3" placeholder="Address" defaultValue="" {...register("address")} />
 <input className="p-2 rounded mb-2" placeholder="City" defaultValue="" {...register("city")} />
 <input className="p-2 rounded me-3 mb-2" placeholder="phone number" defaultValue="" type="number" {...register("phone")} />
