@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import Map from '../Map/Map';
 // import Food from '../../Food/Food';
+import './FoodOptions.css';
+
+
 
 const FoodOptions = () => {
     const [foods, setFoods] = useState([]);
@@ -28,7 +32,7 @@ const handleAddToCart =(index)=>{
 }
 
     return (
-        <div className="bg-white">
+        <div className="bg-white pb-5 custom-position">
           <h1 className="mt-5 mb-5 pt-5 text-warning text-center ms-3 me-3">What Type Food You Want To Deliver?</h1>  
         <div>
                     {
@@ -49,6 +53,7 @@ const handleAddToCart =(index)=>{
                       </div>)
                     }
                 </div>
+                {/* <Map></Map> */}
         </div>
     );
 };
