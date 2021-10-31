@@ -5,14 +5,14 @@ const ManageAllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://peaceful-retreat-36189.herokuapp.com/orders')
         .then(res=> res.json())
         .then(data => setAllOrders(data));
     },[])
 
 
     const handleDelete = id =>{
-        const url= `http://localhost:5000/orders/${id}`
+        const url= `https://peaceful-retreat-36189.herokuapp.com/orders/${id}`
         fetch(url, {
             method: 'DELETE'
         })

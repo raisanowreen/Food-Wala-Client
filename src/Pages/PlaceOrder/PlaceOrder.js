@@ -10,7 +10,7 @@ const PlaceOrder = () => {
 
 
     useEffect( () =>{
-        fetch(`http://localhost:5000/foods/${foodId}`)
+        fetch(`https://peaceful-retreat-36189.herokuapp.com/foods/${foodId}`)
         .then(res => res.json())
         .then(data => setFood(data))
     }, [foodId]);
@@ -22,7 +22,7 @@ const PlaceOrder = () => {
     const onSubmit = data => {
         console.log(data)
 
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://peaceful-retreat-36189.herokuapp.com/orders', data)
         .then(res =>{
             if(res.data.insertedId){
                 alert('Order Placed Successfully');

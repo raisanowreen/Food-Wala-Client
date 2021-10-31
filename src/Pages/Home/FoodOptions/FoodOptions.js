@@ -8,7 +8,7 @@ const FoodOptions = () => {
     const {user} = useAuth();
 
     useEffect(()=>{
-        fetch('http://localhost:5000/foods')
+        fetch('https://peaceful-retreat-36189.herokuapp.com/foods')
         .then(res => res.json())
         .then(data => {
             setFoods(data)
@@ -20,7 +20,7 @@ const handleAddToCart =(index)=>{
     data.email = user.email;
     data.status = "pending"
 
-    fetch('http://localhost:5000/myOrders', {
+    fetch('https://peaceful-retreat-36189.herokuapp.com/myOrders', {
         method: 'POST',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify(data),

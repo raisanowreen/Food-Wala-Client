@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# FoodWala Food Delivery Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://food-wala-f610e.web.app/).
+You can also find the live site here(https://food-wala-f610e.web.app/)
 
-## Available Scripts
+## Project Introduction
 
-In the project directory, you can run:
+This project is created on food delivery theme. Foodwala is for people who is currently envolved in food business and want to help in deliverying their ordered food to their customers. After signing in with google, anyone can purchase what type food they want us to deliver and the delivery charges will depend on the food type they would choose. 
 
-### `yarn start`
+### Project Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+There are many features have been applied in this project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
++ Frameworks
 
-### `yarn test`
+Bootstrap css framework has been used in this project for styling UI. Also react bootstrap has been used to create all orders table in Managae All Orders route.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
++ Installation
 
-### `yarn build`
+React route, firebase, Mongodb, Express, Dotenv, Cors has been installed to make the site like Single Page Application, implement login methods, connect to database, have uninterapted functionalities.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
++ Private Route & Security
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+One of the main features here is the private route implementation. The private route redirects users to login page. Also dotenv has been used to secure database user information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
++ Database Connection
 
-### `yarn eject`
+Database will have 3 types data from the client site: All food types, users' orders details, users' information details. CRUD operation's post, get, delete & update options have been used here.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
++ Client & Server Site Hosting
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+FoodWala site has been hosted on two different places as it has two sites: Client site and Server Site. FoodWala Client Website is deployed and hosted using firebase and FoodWala Server Site is hosted using Heroku.

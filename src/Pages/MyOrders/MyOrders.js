@@ -11,7 +11,7 @@ const MyOrders = () => {
 
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/myOrders/${user.email}`)
+    fetch(`https://peaceful-retreat-36189.herokuapp.com/myOrders/${user.email}`)
     .then(res =>res.json())
     .then(data=>{
         setOrders(data);
@@ -19,14 +19,14 @@ useEffect(()=>{
 },[]);   
 
 useEffect(() =>{
-    fetch('http://localhost:5000/delete')
+    fetch('https://peaceful-retreat-36189.herokuapp.com/delete')
     .then(res=> res.json())
     .then(data => setOrders(data));
 },[])
 
 
 const handleDelete = id =>{
-    const url= `http://localhost:5000/delete/${id}`
+    const url= `https://peaceful-retreat-36189.herokuapp.com/delete/${id}`
     fetch(url, {
         method: 'DELETE'
     })
